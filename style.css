@@ -1,0 +1,154 @@
+/* Font and Layout */
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background: #027392;
+  padding: 20px;
+  margin: 0;
+  color: #333;
+  font-size: 14px; /* Mobile-friendly base font */
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 25px;
+  border: 3px solid #ffffff;
+  border-radius: 10px;
+  background: linear-gradient(to right, #81b8f3, #00C6FF);
+}
+
+/* Header */
+.logo {
+  width: 80px;
+  height: auto;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 22px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+h1 span {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+h2 {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+h4 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input[type="text"] {
+  width: 95%;
+  border: none;
+  border-bottom: 1px solid rgb(55, 11, 11);
+  padding: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 14px;
+  background-color: transparent;
+}
+
+
+
+/* Inline checkbox sections */
+.inline-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.inline-group span {
+  font-weight: normal;
+  flex: 1 0 100%;
+}
+
+.inline-group label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Signature row */
+.signature {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.signature input[type="text"] {
+  border: none;
+  border-bottom: 1px solid #000;
+  width: 100%;
+  max-width: 200px;
+  padding: 5px;
+  background-color: transparent;
+}
+
+
+/* Media Queries — Responsive Scaling Up */
+
+/* Tablets (≥768px) */
+@media (min-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+  .container {
+    max-width: 700px;
+    padding: 30px;
+  }
+
+  input[type="text"],
+  textarea {
+    width: 90%;
+  }
+
+  .signature input[type="text"] {
+    width: 250px;
+  }
+}
+
+/* Desktops (≥1024px) */
+@media (min-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    max-width: 800px;
+  }
+
+  input[type="text"],
+  textarea {
+    width: 80%;
+  }
+
+  .signature input[type="text"] {
+    width: 280px;
+  }
+}

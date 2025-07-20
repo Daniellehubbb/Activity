@@ -4,12 +4,103 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Banyan</title>
+  <link rel="stylesheet" href="style.css">
+  
 </head>
 <body>
   <div class="container">
-    <h2>BANYAN</h2>
-    <p>WEB DESIGN</p>
+    <header>
+      <img src="assets/logo.png" class="logo">
+      <h1>BANYAN<br><span>WEB DESIGN</span></h1>
+    </header>
+
     <h2>CLIENT INFORMATION FORM</h2>
+    <form>
+      <h4>Personal Information</h4>
+      <label>Full Name :</label>
+      <input type="text"><br>
+
+      <label>Company/Organization (if any) :</label>
+      <input type="text"><br>
+
+      <label>Position/Role :</label>
+      <input type="text"><br>
+
+      <label>Email Address :</label>
+      <input type="text"><br>
+
+      <label>Phone Number :</label>
+      <input type="text"><br>
+
+      <div class="inline-group">
+        <label>Preferred Method of Contact:</label>
+        <label><input type="checkbox"> Email</label>
+        <label><input type="checkbox"> Phone</label>
+        <label><input type="checkbox"> Messaging App</label>
+      </div>
+
+      <h4>Project Details</h4>
+      <label>Project Name/Title :</label>
+      <input type="text"><br>
+
+      <div class="inline-group">
+        <label>Type of Service Required:</label>
+        <label><input type="checkbox"> Web Development</label>
+        <label><input type="checkbox"> Graphic Design</label>
+        <label><input type="checkbox"> Branding</label>
+        <label><input type="checkbox"> Marketing</label>
+      </div>
+
+      <label>Brief Description of the Project :</label>
+      <input type="text"><br>
+
+      <label>Target Audience :</label>
+      <input type="text"><br>
+
+      <label>Deadline or Timeline :</label>
+      <input type="text"><br>
+
+      <div class="inline-group">
+        <label>Budget Range:</label>
+        <label><input type="checkbox"> Below P10,000</label>
+        <label><input type="checkbox"> P10,000 - $30,000</label>
+        <label><input type="checkbox"> P50,000+</label>
+      </div>
+
+      <h4>File & Content Provision</h4>
+
+      <div class="inline-group">
+        <label>Will you provide content (text, images, etc)?</label>
+        <label><input type="checkbox"> Yes</label>
+        <label><input type="checkbox"> No</label>
+        <label><input type="checkbox"> Partially</label>
+      </div>
+
+      <div class="inline-group">
+        <label>Do you have brand assets (logo, colors, fonts)?</label>
+        <label><input type="checkbox"> Yes</label>
+        <label><input type="checkbox"> Still in development</label>
+      </div>
+
+      <h4>Approvals & Follow-Ups</h4>
+      <label>Who will approve designs or decisions on your side ?</label>
+      <input type="text"><br>
+
+      <div class="inline-group">
+        <label>How often do you prefer updates?</label>
+        <label><input type="checkbox"> Daily</label>
+        <label><input type="checkbox"> Weekly</label>
+        <label><input type="checkbox"> At key mists, only</label>
+      </div>
+
+      <h4>Signature (if printed)</h4>
+      <div class="signature">
+        <label>Client Signature:</label>
+        <input type="text">
+        <label>Date:</label>
+        <input type="text">
+      </div>
+    </form>
   </div>
 </body>
 </html>
